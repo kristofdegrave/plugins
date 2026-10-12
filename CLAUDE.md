@@ -7,14 +7,14 @@ This repo publishes a plugin marketplace. Only Claude Code works *in* it, so thi
 1. **Issue first.** Every PR starts from an issue filed under `kristofdegrave`, with a goal and acceptance criteria. No issue yet: file one, then start.
 2. **Branch** `<issue-number>-<short-slug>` off an up-to-date `main`, e.g. `2-agent-rules`.
 3. **Commits** are authored by `kristofdegrave-bot` or carry a `Co-Authored-By` Claude attribution line.
-4. **PR by the bot.** Open the PR as a draft with the bot token scoped to that one call, no account switching:
+4. **PR by the bot.** Open the PR as a draft with the bot token scoped to that one call, no account switching. Both accounts must already be logged in (`gh auth status` lists them); run this through the Bash tool:
 
    ```bash
    GH_TOKEN=$(gh auth token --user kristofdegrave-bot) gh pr create --draft --title "..." --body "..."
    ```
 
    The body contains `Closes #<n>` so merging closes the issue.
-5. **Fresh-context review.** Before marking the PR ready, dispatch a review subagent with no conversation history. It reads the diff and the originating issue, checks the acceptance criteria, and posts its findings as PR comments. The context that wrote the code never reviews its own work. Address the findings, then mark the PR ready.
+5. **Fresh-context review.** Before marking the PR ready, dispatch a review subagent with no conversation history. It reads the diff and the originating issue, checks the acceptance criteria, and posts its findings as PR comments with the active `gh` account, `kristofdegrave`. The context that wrote the code never reviews its own work. Address the findings, then mark the PR ready.
 6. **Human merge.** `kristofdegrave` approves and merges. Never merge yourself.
 
 ## Conversation
