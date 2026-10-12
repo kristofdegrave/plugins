@@ -1,7 +1,7 @@
 {
-  "name": "method",
+  "name": "playbook",
   "version": "0.1.0",
-  "description": "An opinionated development method for Claude Code, installed into a project and kept up to date with /method:setup.",
+  "description": "An opinionated development playbook for Claude Code, installed into a project and kept up to date with /playbook:setup.",
   "author": {
     "name": "Kristof Degrave"
   },
