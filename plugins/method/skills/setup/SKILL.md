@@ -1,5 +1,5 @@
 ---
-name: init
+name: setup
 description: Install the method into the current project. Use when the user asks to set up, initialize, or bootstrap the method in a repository.
 ---
 

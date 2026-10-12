@@ -1,7 +1,7 @@
 {
   "name": "method",
   "version": "0.1.0",
-  "description": "An opinionated development method for Claude Code, installed into a project with /method:init.",
+  "description": "An opinionated development method for Claude Code, installed into a project with /method:setup.",
   "author": {
     "name": "Kristof Degrave"
   },

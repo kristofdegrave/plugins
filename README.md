@@ -6,7 +6,7 @@ A [Claude Code plugin marketplace](https://code.claude.com/docs/en/plugins/creat
 
 | Plugin | Description | Version |
 | :- | :- | :- |
-| [`method`](plugins/method) | An opinionated development method for Claude Code, installed into a project with `/method:init`. | 0.1.0 |
+| [`method`](plugins/method) | An opinionated development method for Claude Code, installed into a project with `/method:setup`. | 0.1.0 |
 
 ## Install
 
