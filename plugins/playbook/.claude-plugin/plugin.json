@@ -1,0 +1,11 @@
+{
+  "name": "playbook",
+  "version": "0.1.0",
+  "description": "An opinionated development playbook for Claude Code, installed into a project and kept up to date with /playbook:setup.",
+  "author": {
+    "name": "Kristof Degrave"
+  },
+  "repository": "https://github.com/kristofdegrave/plugins",
+  "license": "MIT",
+  "dependencies": ["mattpocock-skills@mattpocock"]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "plugins",
+  "owner": {
+    "name": "Kristof Degrave"
+  },
+  "description": "Kristof Degrave's Claude Code plugins.",
+  "allowCrossMarketplaceDependenciesOn": ["mattpocock"],
+  "plugins": [
+    {
+      "name": "playbook",
+      "source": "./plugins/playbook",
+      "description": "An opinionated development playbook for Claude Code, installed into a project and kept up to date with /playbook:setup."
+    }
+  ]
+}
