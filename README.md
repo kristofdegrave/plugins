@@ -6,7 +6,7 @@ A [Claude Code plugin marketplace](https://code.claude.com/docs/en/plugins/creat
 
 | Plugin | Description | Version |
 | :- | :- | :- |
-| [`method`](plugins/method) | An opinionated development method for Claude Code, installed into a project with `/method:setup`. | 0.1.0 |
+| [`method`](plugins/method) | An opinionated development method for Claude Code, installed into a project and kept up to date with `/method:setup`. | 0.1.0 |
 
 ## Install
 
@@ -16,6 +16,18 @@ The `method` plugin depends on [`mattpocock-skills`](https://github.com/mattpoco
 /plugin marketplace add mattpocock/skills
 /plugin marketplace add kristofdegrave/plugins
 /plugin install method@plugins
+```
+
+Then run `/method:setup` in the project you want the method installed in.
+
+## Update
+
+Update the plugin, then rerun the setup skill. The skill is rerunnable: it detects what is already in place and applies only what changed.
+
+```text
+/plugin marketplace update plugins
+/plugin update method@plugins
+/method:setup
 ```
 
 ## Develop
