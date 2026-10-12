@@ -1,0 +1,11 @@
+{
+  "name": "method",
+  "version": "0.1.0",
+  "description": "An opinionated development method for Claude Code, installed into a project with /method:init.",
+  "author": {
+    "name": "Kristof Degrave"
+  },
+  "repository": "https://github.com/kristofdegrave/plugins",
+  "license": "MIT",
+  "dependencies": ["mattpocock-skills@mattpocock"]
+}
