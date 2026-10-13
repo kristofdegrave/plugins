@@ -1,16 +1,16 @@
 # Contribution workflow
 
-The chain one work item runs through. `work` runs it; each step is a skill.
+The chain one work item runs through. `work` runs it: it fetches the work item, hands each step skill its input, and posts the output. Step skills never touch the tracker.
 
 ## The chain
 
 | Step | Skill | Input | Output | Stop when |
 |---|---|---|---|---|
 | 0. File | `file-issue` | Work with no work item | A work item with its context label | The item exists |
-| 1. Implement | `implement` | A work item | The work, self-checked | The work file ends |
+| 1. Implement | `implement` | The work item's instructions | The work, self-checked | The work file ends |
 | 2. Test | `work` | The implemented change | The suite's result | Green; red returns to step 1 |
-| 3. Review | `review` | An open change request | One posted review | The pass's exit (**Review cap**) |
-| 4. Fix | `fix` | Open findings | Every finding answered | Each has a reply; step 3 runs again |
+| 3. Review | `review` | The change | Findings by severity | Every reviewer returned |
+| 4. Fix | `fix` | The findings | Each fixed, or why not | Each answered; step 3 runs again |
 | 5. Clean up | `cleanup` | The human saying it merged | Item done; worktree and branch gone | Epic's open children reported |
 
 ## Rule B: run through, then stop
